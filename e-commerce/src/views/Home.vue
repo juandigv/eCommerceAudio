@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Filters />
     <ProductListSimple :items="items" />
     <v-divider />
     <v-row justify="space-between">
@@ -28,6 +29,7 @@
 import ProductListSimple from "../components/ProductListSimple";
 import ProductListGrid from "../components/ProductListGrid";
 import ProductCard from "../components/ProductCard.vue";
+import Filters from "@/components/Filters.vue";
 
 export default {
   name: "Home",
@@ -249,6 +251,7 @@ export default {
     ProductListSimple,
     ProductListGrid,
     ProductCard,
+    Filters
   },
 };
 </script>

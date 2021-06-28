@@ -68,16 +68,20 @@ export default {
 .titles {
 	margin-top: 40px;
 	margin-bottom: 16px;
+	font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
 }
 
 .filter-checkbox {
 	color: var(--v-primary500-base) !important;
-	font-family: $body-font-family;
 	margin-top: 0px;
 	padding-top: 0px;
 	margin-bottom: 16px;
 	height: 24px;
-	
+	font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
 }
 
 .v-input--radio-group--column .v-radio:not(:last-child):not(:only-child) {

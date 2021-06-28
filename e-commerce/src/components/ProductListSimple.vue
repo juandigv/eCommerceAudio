@@ -1,5 +1,5 @@
 <template>
-  <div class="product-list">
+  <div class="product-list-simple">
     <v-row justify="space-between" no-gutters>
       <v-col class="product-col" v-for="item in items" :key="item.id">
         <ProductCard
@@ -19,7 +19,7 @@
 import ProductCard from "../components/ProductCard";
 
 export default {
-  name: "ProductList",
+  name: "ProductListSimple",
   props: {
     items: Array
   },
@@ -28,4 +28,4 @@ export default {
   },
 };
 </script>
-<style src="./productList.css" scoped></style>
+<style src="./productListSimple.css" scoped></style>

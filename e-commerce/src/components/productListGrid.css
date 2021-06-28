@@ -1,0 +1,16 @@
+.product-list-grid{
+    width: 1024px;
+    height: 1648px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 52px;
+    padding-top: 52px;
+}
+.product-col{
+    max-width: min-content;
+    max-height: min-content;
+    display: flex;
+}
+.spacer52{
+    height: 52px;
+}

@@ -20,7 +20,9 @@
     </div>
 
     <div class="product-name-text">{{ name }}</div>
+    <br/>
     <div class="product-detail-text">{{ detail }}</div>
+     <br/>
     <div class="product-price-text">Price: ${{ price }}</div>
   </v-card>
 </template>

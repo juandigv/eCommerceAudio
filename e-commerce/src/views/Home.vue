@@ -1,9 +1,33 @@
 <template>
-  <ProductList :items="items" />
+  <div>
+    <ProductListSimple :items="items" />
+    <v-divider />
+    <v-row justify="space-between">
+      <v-col width="256px">
+        <ProductCard
+          :src="extra[0].src"
+          :name="extra[0].name"
+          :detail="extra[0].detail"
+          :price="extra[0].price"
+          :info="extra[0].info"
+          :infoColor="extra[0].infoColor"
+        />
+      </v-col>
+      <v-col>
+        <ProductListGrid
+          :items1="items1"
+          :items2="items2"
+          :items3="items3"
+          :items4="items4"
+      /></v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
-import ProductList from "../components/ProductList";
+import ProductListSimple from "../components/ProductListSimple";
+import ProductListGrid from "../components/ProductListGrid";
+import ProductCard from "../components/ProductCard.vue";
 
 export default {
   name: "Home",
@@ -56,10 +80,175 @@ export default {
           info: "Coupons Available",
         },
       ],
+      items1: [
+        {
+          id: 1,
+          src: "https://http2.mlstatic.com/D_NQ_NP_839384-MPE44659208575_012021-O.jpg",
+          name: "Acoustic Audio AA321B",
+          detail: "Free Shipping",
+          price: "33.88",
+          infoColor: "1",
+          info: "",
+        },
+        {
+          id: 2,
+          src: "https://images-na.ssl-images-amazon.com/images/I/71kzQ1lgpqL._AC_SY355_.jpg",
+          name: "Edifier R1280Ts",
+          detail: "Free Shipping",
+          price: "109.99",
+          infoColor: "1",
+          info: "Most Sold",
+        },
+        {
+          id: 3,
+          src: "https://www.ubuy.com.tr/productimg/?image=aHR0cHM6Ly9pbWFnZXMtbmEuc3NsLWltYWdlcy1hbWF6b24uY29tL2ltYWdlcy9JLzcxREdwNXFwUVZMLl9TUzQwMF8uanBn.jpg",
+          name: "Moukey Peak Power",
+          detail: "Free Shipping",
+          price: "79.88",
+          infoColor: "1",
+          info: "Coupons Available",
+        },
+        {
+          id: 4,
+          src: "https://images-na.ssl-images-amazon.com/images/I/41vpoj6ikaL._AC_.jpg",
+          name: "Fluace Signature Hifi 2",
+          detail: "Available in Black Ash",
+          price: "199.99",
+          infoColor: "3",
+          info: "Low Stock",
+        },
+      ],
+      items2: [
+        {
+          id: 1,
+          src: "https://media.ldlc.com/r1600/ld/products/00/05/58/75/LD0005587578_2.jpg",
+          name: "Triangle Hifi Speakers",
+          detail: "Re-stocking soon",
+          price: "456.16",
+          infoColor: "3",
+          info: "Low Stock",
+        },
+        {
+          id: 2,
+          src: "https://images-na.ssl-images-amazon.com/images/I/61nXILRTADL._AC_SL1000_.jpg",
+          name: "AVX 6.5 inch audio",
+          detail: "Available Shipping",
+          price: "64.99",
+          infoColor: "1",
+          info: "",
+        },
+        {
+          id: 3,
+          src: "https://themusiclovershop.com/estore/123/audioengine-hd3-wireless-speakers-pair.jpg",
+          name: "Audioengine HD3 wireless",
+          detail: "Available in other colors",
+          price: "349.00",
+          infoColor: "1",
+          info: "",
+        },
+        {
+          id: 4,
+          src: "https://m.media-amazon.com/images/I/81bWVGPr9zL._AC_SS450_.jpg",
+          name: "Polk Audio S-15 American Hi-fi",
+          detail: "Re-stocking soon",
+          price: "229.00",
+          infoColor: "3",
+          info: "Low Stock",
+        },
+      ],
+      items3: [
+        {
+          id: 1,
+          src: "https://ae01.alicdn.com/kf/H198074837e464dd5bc3fb332f3170c1an/Original-Cowin-E7-Upgraded-ANC-bluetooth-Headphone-wireless-bluetooth-headset-Earphone-Active-Noise-Cancelling-headphones.jpg_Q90.jpg_.webp",
+          name: "Cowin E7 headset",
+          detail: "Available Shipping",
+          price: "49.99",
+          infoColor: "1",
+          info: "Sponsored",
+        },
+        {
+          id: 2,
+          src: "https://www.ubuy.co.id/productimg/?image=aHR0cHM6Ly9pbWFnZXMtbmEuc3NsLWltYWdlcy1hbWF6b24uY29tL2ltYWdlcy9JLzUxU3NCNFhyeUVMLl9TUzQwMF8uanBn.jpg",
+          name: "Cowin SE8 headset",
+          detail: "Available Shipping",
+          price: "139.99",
+          infoColor: "1",
+          info: "Sponsored",
+        },
+        {
+          id: 3,
+          src: "https://m.media-amazon.com/images/I/71bA41wJZCL._AC_SS450_.jpg",
+          name: "Soundcore Ankerlife Q20",
+          detail: "Price depends on color",
+          price: "49.99",
+          infoColor: "1",
+          info: "",
+        },
+        {
+          id: 4,
+          src: "https://m.media-amazon.com/images/I/51sMkuA2DrL._AC_SS450_.jpg",
+          name: "Beats Studio 3",
+          detail: "No shipping",
+          price: "160.00",
+          infoColor: "3",
+          info: "",
+        },
+      ],
+      items4: [
+        {
+          id: 1,
+          src: "https://static-01.shop.com.mm/p/1de87f4e69700eeee0325ce37d25007a.jpg",
+          name: "Skullcandy Crusher Evo",
+          detail: "Available in cold grey",
+          price: "131.00",
+          infoColor: "2",
+          info: "Members discount",
+        },
+        {
+          id: 2,
+          src: "https://m.media-amazon.com/images/I/6123zCDo14S._AC_SS450_.jpg",
+          name: "HROEENOI JZ02",
+          detail: "Available shipping",
+          price: "39.99",
+          infoColor: "1",
+          info: "Sponsored",
+        },
+        {
+          id: 3,
+          src: "https://images-na.ssl-images-amazon.com/images/I/61BI8etghvL._AC_SX425_.jpg",
+          name: "PowerLocus Foldable wireless",
+          detail: "Price depends on color",
+          price: "25.99",
+          infoColor: "1",
+          info: "",
+        },
+        {
+          id: 4,
+          src: "https://images-na.ssl-images-amazon.com/images/I/41-yZ0SyxtL.jpg",
+          name: "iJoy Premium Rechargeable Wireless Headphones",
+          detail: "Requires external DAC",
+          price: "379.99",
+          infoColor: "3",
+          info: "Low Stock",
+        },
+      ],
+      extra: [
+        {
+          id: 1,
+          src: "https://pontreyes.com/1243-large_default/auriculares-sennheiser-hd600.jpg",
+          name: "Sennheiser HD600",
+          detail: "Requires external DAC",
+          price: "379.99",
+          infoColor: "3",
+          info: "Low Stock",
+        },
+      ],
     };
   },
   components: {
-    ProductList,
+    ProductListSimple,
+    ProductListGrid,
+    ProductCard,
   },
 };
 </script>

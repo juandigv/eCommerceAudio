@@ -1,5 +1,8 @@
 .product-list{
-    background-color: red;
     width: 100%;
     padding: 36px;
+}
+.product-col{
+    max-width: min-content;
+    margin-top: -8px;
 }

@@ -4,9 +4,9 @@
     fluid
   >
 		<v-col>
-			<h3>Filter Brand</h3>
+			<h3 class="titles">Filter Brand</h3>
 			<v-checkbox
-				class="filter-colors"
+				class="filter-checkbox"
 				v-model="brands"
 				v-for="(element) in filterBrand"
 				:key="element"
@@ -14,9 +14,9 @@
 				:value="element"
 			></v-checkbox>
 
-			<h3>Filter Type</h3>
+			<h3 class="titles">Filter Type</h3>
 			<v-checkbox
-				class="filter-colors"
+				class="filter-checkbox"
 				v-model="types"
 				v-for="(element) in filterType"
 				:key="element"
@@ -24,10 +24,9 @@
 				:value="element"
 			></v-checkbox>
 
-			<h3>Sort By</h3>
+			<h3 class="titles">Sort By</h3>
 			<v-radio-group v-model="radioGroup">
 				<v-radio
-					class="filter-colors"
 					v-for="(element, index) in sortBy"
 					:key="index"
 					:label="element"
@@ -58,10 +57,33 @@ export default {
 <style lang="scss" scoped>
 @import '../sass/variables.scss';
 
-.filter-colors {
+.col {
+	max-width: 288px;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.titles {
+	margin-top: 40px;
+	margin-bottom: 16px;
+}
+
+.filter-checkbox {
 	color: var(--v-primary500-base) !important;
 	font-family: $body-font-family;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-bottom: 16px;
+	height: 24px;
+	
 }
+
+.v-input--radio-group--column .v-radio:not(:last-child):not(:only-child) {
+    margin-bottom: 16px;
+}
+
 .v-application .primary--text {
     color: var(--v-primary500-base) !important;
     caret-color: var(--v-primary500-base) !important;

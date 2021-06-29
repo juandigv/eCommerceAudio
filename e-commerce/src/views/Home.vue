@@ -1,11 +1,15 @@
 <template>
   <div>
+    <Banner2/>
     <ProductListSimple :items="items" />
+    <Banner/>
   </div>
 </template>
 
 <script>
 import ProductListSimple from "../components/ProductListSimple";
+import Banner from "../components/Banner.vue";
+import Banner2 from "../components/Banner-image.vue";
 
 export default {
   name: "Home",
@@ -224,7 +228,9 @@ export default {
     };
   },
   components: {
-    ProductListSimple
+    ProductListSimple,
+    Banner2,
+    Banner
   },
 };
 </script>

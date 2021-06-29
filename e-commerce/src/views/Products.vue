@@ -1,11 +1,23 @@
 <template>
   <div>
-    <ProductListSimple :items="items" />
+    <v-row justify="space-between">
+      <v-col width="256px">
+        <Filters />
+      </v-col>
+      <v-col>
+        <ProductListGrid
+          :items1="items1"
+          :items2="items2"
+          :items3="items3"
+          :items4="items4"
+      /></v-col>
+    </v-row>
   </div>
 </template>
 
 <script>
-import ProductListSimple from "../components/ProductListSimple";
+import ProductListGrid from "../components/ProductListGrid";
+import Filters from "@/components/Filters.vue";
 
 export default {
   name: "Home",
@@ -224,7 +236,8 @@ export default {
     };
   },
   components: {
-    ProductListSimple
+    ProductListGrid,
+    Filters
   },
 };
 </script>

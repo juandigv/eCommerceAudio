@@ -30,6 +30,6 @@ export default new Vuetify({
           charcoal900: '#2E2B2B',
         },
       },
-      options: { customProperties: true },
+      options: { customProperties: true }
     },
   })

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Banner/>
-    <ProductListSimple :items="items" />
     <Banner2/>
+    <ProductListSimple :items="items" />
+    <Banner/>
   </div>
 </template>
 

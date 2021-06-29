@@ -1,5 +1,6 @@
 <template>
   <v-app>
+     <Header/>
     <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
         <v-img
@@ -40,11 +41,15 @@
 </template>
 
 <script>
+import Header from "@/components/Header.vue";
 export default {
   name: "App",
 
   data: () => ({
     //
   }),
+    components: {
+    Header
+  },
 };
 </script>

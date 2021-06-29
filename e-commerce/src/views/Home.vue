@@ -3,6 +3,7 @@
     <Banner2/>
     <ProductListSimple :items="items" />
     <Banner/>
+    <Footer/>
   </div>
 </template>
 
@@ -10,6 +11,9 @@
 import ProductListSimple from "../components/ProductListSimple";
 import Banner from "../components/Banner.vue";
 import Banner2 from "../components/Banner-image.vue";
+import Footer from "../components/Footer.vue";
+
+
 
 export default {
   name: "Home",
@@ -230,7 +234,8 @@ export default {
   components: {
     ProductListSimple,
     Banner2,
-    Banner
+    Banner,
+    Footer
   },
 };
 </script>

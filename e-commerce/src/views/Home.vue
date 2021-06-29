@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <Banner2/>
+  <div class="main-content">
+    <Banner2 />
     <ProductListSimple :items="items" />
-    <Banner/>
+    <Banner />
   </div>
 </template>
 
@@ -230,7 +230,15 @@ export default {
   components: {
     ProductListSimple,
     Banner2,
-    Banner
+    Banner,
   },
 };
 </script>
+
+<style scoped>
+.main-content {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+</style>

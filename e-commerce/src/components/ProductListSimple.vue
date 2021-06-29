@@ -21,7 +21,7 @@ import ProductCard from "../components/ProductCard";
 export default {
   name: "ProductListSimple",
   props: {
-    items: Array
+    items: Array,
   },
   components: {
     ProductCard,

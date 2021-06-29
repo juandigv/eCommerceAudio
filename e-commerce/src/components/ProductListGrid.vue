@@ -12,7 +12,7 @@
         />
       </v-col>
     </v-row>
-    <div class="spacer52"/>
+    <div class="spacer52" />
     <v-row justify="space-between" no-gutters>
       <v-col class="product-col" v-for="item in items2" :key="item.id">
         <ProductCard
@@ -25,7 +25,7 @@
         />
       </v-col>
     </v-row>
-    <div class="spacer52"/>
+    <div class="spacer52" />
     <v-row justify="space-between" no-gutters>
       <v-col class="product-col" v-for="item in items3" :key="item.id">
         <ProductCard
@@ -38,7 +38,7 @@
         />
       </v-col>
     </v-row>
-    <div class="spacer52"/>
+    <div class="spacer52" />
     <v-row justify="space-between" no-gutters>
       <v-col class="product-col" v-for="item in items4" :key="item.id">
         <ProductCard

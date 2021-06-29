@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <v-row justify="space-between">
+  <div class="main-content">
+    <v-row justify="space-between" no-gutters>
       <v-col width="256px">
         <Filters />
       </v-col>
@@ -237,7 +237,15 @@ export default {
   },
   components: {
     ProductListGrid,
-    Filters
+    Filters,
   },
 };
 </script>
+
+<style scoped>
+.main-content {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+</style>

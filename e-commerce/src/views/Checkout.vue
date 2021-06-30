@@ -13,7 +13,7 @@
         </div>
       </v-col>
       <v-col>
-        <h1 class="text-cart">Cart Total</h1>
+        <SideTotal :detailSale="detailSale" class="info-cart"/>
       </v-col>
     </v-row>
     <div style="margin-top: 76px; margin-bottom: 64px">
@@ -26,11 +26,17 @@
 import CartCard from "@/components/CartCard.vue";
 import ProductListCheckout from "../components/ProductListCheckout";
 import Banner from "../components/Banner.vue";
+import SideTotal from  "../components/SideTotal.vue"
 
 export default {
   name: "Checkout",
   data() {
     return {
+      detailSale: {
+        listSale : [ {item: "Pollo", price: "18.90$"}, {item: "Vaca", price: "90.99$"}, {item: "Pez", price: "5.69$"}],
+        coupons: [ "AdMw", "CpEs", "8S5A1", "ADMW"],
+        total: "22.549,68$"
+      },
       cart: [
         {
           img: "https://co.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw9a5c1d67/JBL-LINK-20-Back-BLK_1605x1605px.png?sw=537&sfrm=png",
@@ -92,6 +98,7 @@ export default {
   components: {
     CartCard,
     ProductListCheckout,
+    SideTotal,
     Banner,
   },
 };
@@ -109,6 +116,9 @@ export default {
 .text-cart {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+.info-cart {
+  margin-top: 85px;
 }
 .text-sub {
   margin-top: 8px;

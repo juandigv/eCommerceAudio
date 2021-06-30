@@ -4,8 +4,17 @@
     <v-main>
       <router-view />
     </v-main>
-    <v-btn color="var(--v-primary500-base)" width="96px" height="96px" fixed fab right bottom large >
-       <img alt="" src="./assets/chat.svg" />
+    <v-btn
+      color="var(--v-primary500-base)"
+      width="96px"
+      height="96px"
+      fixed
+      fab
+      right
+      bottom
+      large
+    >
+      <img alt="" src="./assets/chat.svg" />
     </v-btn>
     <Footer />
   </v-app>

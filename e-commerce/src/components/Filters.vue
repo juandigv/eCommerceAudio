@@ -4,6 +4,7 @@
       <h3 class="titles">Filter Brand</h3>
       <v-checkbox
         class="filter-checkbox"
+        color="var(--v-primary500-base)"
         v-model="brands"
         v-for="element in filterBrand"
         :key="element"
@@ -14,6 +15,7 @@
       <h3 class="titles">Filter Type</h3>
       <v-checkbox
         class="filter-checkbox"
+        color="var(--v-primary500-base)"
         v-model="types"
         v-for="element in filterType"
         :key="element"
@@ -24,6 +26,7 @@
       <h3 class="titles">Sort By</h3>
       <v-radio-group v-model="radioGroup">
         <v-radio
+          color="var(--v-primary500-base)"
           v-for="(element, index) in sortBy"
           :key="index"
           :label="element"
@@ -72,7 +75,6 @@ export default {
 }
 
 .filter-checkbox {
-  color: var(--v-primary500-base) !important;
   margin-top: 0px;
   padding-top: 0px;
   margin-bottom: 16px;
@@ -84,11 +86,6 @@ export default {
 
 .v-input--radio-group--column .v-radio:not(:last-child):not(:only-child) {
   margin-bottom: 16px;
-}
-
-.v-application .primary--text {
-  color: var(--v-primary500-base) !important;
-  caret-color: var(--v-primary500-base) !important;
 }
 
 .button-style {

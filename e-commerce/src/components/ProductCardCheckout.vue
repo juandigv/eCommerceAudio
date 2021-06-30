@@ -20,8 +20,15 @@
     <br />
     <div class="product-price-text">${{ item.price }}</div>
 
-    <v-img class="product-image" :aspect-ratio="1 / 1" :src="item.src" contain></v-img>
-    <v-btn class="product-button" rounded color="var(--v-primary500-base)"> BUY </v-btn>
+    <v-img
+      class="product-image"
+      :aspect-ratio="1 / 1"
+      :src="item.src"
+      contain
+    ></v-img>
+    <v-btn class="product-button" rounded color="var(--v-primary500-base)">
+      BUY
+    </v-btn>
   </v-card>
 </template>
 

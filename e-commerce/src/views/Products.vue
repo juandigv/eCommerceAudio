@@ -10,13 +10,14 @@
           :items2="items2"
           :items3="items3"
           :items4="items4"
-      /></v-col>
+        />
+      </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
-import ProductListGrid from "../components/ProductListGrid";
+import ProductListGrid from "@/components/ProductListGrid";
 import Filters from "@/components/Filters.vue";
 
 export default {

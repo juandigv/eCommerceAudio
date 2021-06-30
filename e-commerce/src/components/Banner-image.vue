@@ -7,7 +7,7 @@
       <h1>{{ detailBanner2.detail }}</h1>
       <p>{{ detailBanner2.subdetail }}</p>
     </div>
-    <button class="button-style">Shop</button>
+    <button class="button-style">SHOP</button>
   </div>
 </template>
 

@@ -16,8 +16,8 @@
         <h1>Cart Total</h1>
       </v-col>
     </v-row>
-    <div style="margin-top:76px; margin-bottom:64px">
-      <Banner />
+    <div style="margin-top: 76px; margin-bottom: 64px">
+      <Banner :detailBanner="detailBanner" />
     </div>
   </div>
 </template>
@@ -30,6 +30,10 @@ export default {
   name: "Checkout",
   data() {
     return {
+      detailBanner: {
+        detail:
+          "A message to Projessional customes: An important loudspeaker recall notice",
+      },
       products: [
         {
           id: 1,

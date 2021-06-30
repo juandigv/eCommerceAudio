@@ -1,30 +1,36 @@
 <template>
-    <div class="banner">
-        <div class="banner-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque ante non nisl dignissim, </p>
-            <button class="button-style">Learn More</button>
-        </div>
+  <div class="banner">
+    <div class="banner-text">
+      <p>
+        {{ detailBanner.detail }}
+      </p>
+      <button class="button-style">Learn More</button>
     </div>
+  </div>
 </template>
 
 <script>
-
 export default {
-  name: "Banner"
+  name: "Banner",
+  props: {
+    detailBanner: Object,
+  },
 };
-
 </script>
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .banner {
   /*background: linear-gradient(#D2CFCF, #D2CFCF);*/
-  background: linear-gradient(var(--v-charcoal200-base), var(--v-charcoal200-base));
+  background: linear-gradient(
+    var(--v-charcoal200-base),
+    var(--v-charcoal200-base)
+  );
   padding: 70px;
   position: relative;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .banner-text {
   position: absolute;

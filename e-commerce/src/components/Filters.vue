@@ -30,6 +30,8 @@
           :value="element"
         ></v-radio>
       </v-radio-group>
+
+      <button class="button-style">CLEAR</button>
     </v-col>
   </v-container>
 </template>
@@ -55,7 +57,6 @@ export default {
 @import "../sass/variables.scss";
 
 .col {
-  max-width: 288px;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 0px;
@@ -88,5 +89,16 @@ export default {
 .v-application .primary--text {
   color: var(--v-primary500-base) !important;
   caret-color: var(--v-primary500-base) !important;
+}
+
+.button-style {
+  background-color: var(--v-primary500-base);
+  color: var(--v-charcoal50-base);
+  border-radius: 32px;
+  width: 154px;
+  height: 48px;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 16px;
 }
 </style>

@@ -1,9 +1,10 @@
 <template>
-  <div>
-    <Banner2/>
+  <div class="main-content">
+    <Banner2 :detailBanner2="detailBanner2" />
     <ProductListSimple :items="items" />
-    <Banner/>
-    <Footer/>
+    <Banner2 :detailBanner2="detailBanner21" />
+    <ProductListSimple :items="items1" />
+    <Banner :detailBanner="detailBanner" />
   </div>
 </template>
 
@@ -11,14 +12,26 @@
 import ProductListSimple from "../components/ProductListSimple";
 import Banner from "../components/Banner.vue";
 import Banner2 from "../components/Banner-image.vue";
-import Footer from "../components/Footer.vue";
-
-
 
 export default {
   name: "Home",
   data() {
     return {
+      detailBanner: {
+        detail:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque ante non nisl dignissim, RRREEEEELOCO",
+      },
+      detailBanner2: {
+        src: "https://i.pinimg.com/originals/26/cc/10/26cc10bba7cc18f1e254e2d6077d23e9.jpg",
+        //src: "https://i.imgur.com/ZU3KpSL.png",
+        detail: "Eliminate distractions and #RuletheQuiet",
+        subdetail: "RAZOR QUIETCOMFORT® EARBUDS",
+      },
+      detailBanner21: {
+        src: "https://i.imgur.com/ZU3KpSL.png",
+        detail: "Eliminate distractions and #RuletheQuiet",
+        subdetail: "RAZOR QUIETCOMFORT® EARBUDS",
+      },
       items: [
         {
           id: 1,
@@ -103,124 +116,8 @@ export default {
           infoColor: "3",
           info: "Low Stock",
         },
-      ],
-      items2: [
         {
-          id: 1,
-          src: "https://media.ldlc.com/r1600/ld/products/00/05/58/75/LD0005587578_2.jpg",
-          name: "Triangle Hifi Speakers",
-          detail: "Re-stocking soon",
-          price: "456.16",
-          infoColor: "3",
-          info: "Low Stock",
-        },
-        {
-          id: 2,
-          src: "https://images-na.ssl-images-amazon.com/images/I/61nXILRTADL._AC_SL1000_.jpg",
-          name: "AVX 6.5 inch audio",
-          detail: "Available Shipping",
-          price: "64.99",
-          infoColor: "1",
-          info: "",
-        },
-        {
-          id: 3,
-          src: "https://themusiclovershop.com/estore/123/audioengine-hd3-wireless-speakers-pair.jpg",
-          name: "Audioengine HD3 wireless",
-          detail: "Available in other colors",
-          price: "349.00",
-          infoColor: "1",
-          info: "",
-        },
-        {
-          id: 4,
-          src: "https://m.media-amazon.com/images/I/81bWVGPr9zL._AC_SS450_.jpg",
-          name: "Polk Audio S-15 American Hi-fi",
-          detail: "Re-stocking soon",
-          price: "229.00",
-          infoColor: "3",
-          info: "Low Stock",
-        },
-      ],
-      items3: [
-        {
-          id: 1,
-          src: "https://ae01.alicdn.com/kf/H198074837e464dd5bc3fb332f3170c1an/Original-Cowin-E7-Upgraded-ANC-bluetooth-Headphone-wireless-bluetooth-headset-Earphone-Active-Noise-Cancelling-headphones.jpg_Q90.jpg_.webp",
-          name: "Cowin E7 headset",
-          detail: "Available Shipping",
-          price: "49.99",
-          infoColor: "1",
-          info: "Sponsored",
-        },
-        {
-          id: 2,
-          src: "https://www.ubuy.co.id/productimg/?image=aHR0cHM6Ly9pbWFnZXMtbmEuc3NsLWltYWdlcy1hbWF6b24uY29tL2ltYWdlcy9JLzUxU3NCNFhyeUVMLl9TUzQwMF8uanBn.jpg",
-          name: "Cowin SE8 headset",
-          detail: "Available Shipping",
-          price: "139.99",
-          infoColor: "1",
-          info: "Sponsored",
-        },
-        {
-          id: 3,
-          src: "https://m.media-amazon.com/images/I/71bA41wJZCL._AC_SS450_.jpg",
-          name: "Soundcore Ankerlife Q20",
-          detail: "Price depends on color",
-          price: "49.99",
-          infoColor: "1",
-          info: "",
-        },
-        {
-          id: 4,
-          src: "https://m.media-amazon.com/images/I/51sMkuA2DrL._AC_SS450_.jpg",
-          name: "Beats Studio 3",
-          detail: "No shipping",
-          price: "160.00",
-          infoColor: "3",
-          info: "",
-        },
-      ],
-      items4: [
-        {
-          id: 1,
-          src: "https://static-01.shop.com.mm/p/1de87f4e69700eeee0325ce37d25007a.jpg",
-          name: "Skullcandy Crusher Evo",
-          detail: "Available in cold grey",
-          price: "131.00",
-          infoColor: "2",
-          info: "Members discount",
-        },
-        {
-          id: 2,
-          src: "https://m.media-amazon.com/images/I/6123zCDo14S._AC_SS450_.jpg",
-          name: "HROEENOI JZ02",
-          detail: "Available shipping",
-          price: "39.99",
-          infoColor: "1",
-          info: "Sponsored",
-        },
-        {
-          id: 3,
-          src: "https://images-na.ssl-images-amazon.com/images/I/61BI8etghvL._AC_SX425_.jpg",
-          name: "PowerLocus Foldable wireless",
-          detail: "Price depends on color",
-          price: "25.99",
-          infoColor: "1",
-          info: "",
-        },
-        {
-          id: 4,
-          src: "https://images-na.ssl-images-amazon.com/images/I/41-yZ0SyxtL.jpg",
-          name: "iJoy Premium Rechargeable Wireless Headphones",
-          detail: "Requires external DAC",
-          price: "379.99",
-          infoColor: "3",
-          info: "Low Stock",
-        },
-      ],
-      extra: [
-        {
-          id: 1,
+          id: 5,
           src: "https://pontreyes.com/1243-large_default/auriculares-sennheiser-hd600.jpg",
           name: "Sennheiser HD600",
           detail: "Requires external DAC",
@@ -235,7 +132,14 @@ export default {
     ProductListSimple,
     Banner2,
     Banner,
-    Footer
   },
 };
 </script>
+
+<style scoped>
+.main-content {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+</style>

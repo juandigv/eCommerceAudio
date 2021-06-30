@@ -15,14 +15,14 @@
         :color="getColor(infoColor)"
         v-if="info != ''"
       >
-        <div class="product-info-text">{{ info }} </div>
+        <div class="product-info-text">{{ info }}</div>
       </v-card>
     </div>
 
     <div class="product-name-text">{{ name }}</div>
-    <br/>
+    <br />
     <div class="product-detail-text">{{ detail }}</div>
-     <br/>
+    <br />
     <div class="product-price-text">Price: ${{ price }}</div>
   </v-card>
 </template>

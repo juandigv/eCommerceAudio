@@ -13,30 +13,32 @@
       </div>
     </div>
     <div class="flex-wrapper-one">
-      <div class="flex-wrapper-title">
-        <p class="titles">Aditional Information</p>
-        <p class="titles">About the company</p>
-        <p class="titles">Licenses and disclaimers</p>
-      </div>
-      <div class="flex-wrapper-subtitles">
-        <p class="subtitle1">Relevant link 1</p>
-        <p class="subtitle2">Contact Us</p>
-        <p class="subtitle3">Terms of use</p>
-      </div>
-      <div class="flex-wrapper-subtitles">
-        <p class="subtitle1">Relevant link 2</p>
-        <p class="subtitle2">About Us</p>
-        <p class="subtitle3">Terms of sale</p>
-      </div>
-      <div class="flex-wrapper-subtitles">
-        <p class="subtitle1">Relevant link 3</p>
-        <p class="subtitle2">Work with us</p>
-        <p class="subtitle3">Accesibility</p>
-      </div>
-      <div class="flex-wrapper-subtitles">
-        <p style="margin-left: 11em" class="subtitle1"></p>
-        <p class="subtitle2">Support</p>
-        <p class="subtitle3">Trademarks</p>
+      <div class="aux">
+        <div class="flex-wrapper-title">
+          <p class="titles">Aditional Information</p>
+          <p class="titles">About the company</p>
+          <p class="titles">Licenses and disclaimers</p>
+        </div>
+        <div class="flex-wrapper-subtitles">
+          <p class="subtitle1">Relevant link 1</p>
+          <p class="subtitle2">Contact Us</p>
+          <p class="subtitle3">Terms of use</p>
+        </div>
+        <div class="flex-wrapper-subtitles">
+          <p class="subtitle1">Relevant link 2</p>
+          <p class="subtitle2">About Us</p>
+          <p class="subtitle3">Terms of sale</p>
+        </div>
+        <div class="flex-wrapper-subtitles">
+          <p class="subtitle1">Relevant link 3</p>
+          <p class="subtitle2">Work with us</p>
+          <p class="subtitle3">Accesibility</p>
+        </div>
+        <div class="flex-wrapper-subtitles">
+          <p style="margin-left: 11em" class="subtitle1"></p>
+          <p class="subtitle2">Support</p>
+          <p class="subtitle3">Trademarks</p>
+        </div>
       </div>
     </div>
   </div>
@@ -59,13 +61,14 @@ export default {
   padding: 16px 64px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .flex-social-networks {
   margin-right: 32px;
   border-radius: 2px;
   display: flex;
   align-items: flex-start;
+  margin-right: 840px;
 }
 .vector {
   flex: 1;
@@ -76,8 +79,8 @@ export default {
 .vector-two {
   flex: 1;
   align-self: stretch;
-  margin-right: 10px;
   object-fit: cover;
+  margin-right: 10px;
 }
 .sign-up-container {
   display: flex;
@@ -90,6 +93,7 @@ export default {
   line-height: 26px;
   margin: 0px;
   color: var(--v-charcoal50-base);
+  min-width: 70px;
 }
 .flex-wrapper-one {
   background-color: var(--v-charcoal900-base);
@@ -158,5 +162,10 @@ export default {
   line-height: 26px;
   color: var(--v-charcoal200-base);
   margin-right: 200px;
+}
+.aux {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
 }
 </style>

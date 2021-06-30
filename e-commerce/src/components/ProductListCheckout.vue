@@ -2,9 +2,7 @@
   <div class="product-list-checkout">
     <v-row justify="space-between" no-gutters>
       <v-col class="product-col" v-for="item in items" :key="item.id">
-        <ProductCardCheckout
-          :item="item"
-        />
+        <ProductCardCheckout :item="item" />
       </v-col>
     </v-row>
   </div>

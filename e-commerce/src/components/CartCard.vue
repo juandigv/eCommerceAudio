@@ -1,6 +1,6 @@
 <template>
-  <v-card width="906px" height="192px" color="var(--v-charcoal100-base)">
-    <v-row>
+  <v-card class="cart-card">
+    <v-row no-gutters>
       <v-col class="col-separation">
         <v-img
           class="product-image"
@@ -13,7 +13,7 @@
           <div class="main-title">{{ detailCard.title }}</div>
           <div class="description1">{{ detailCard.description1 }}</div>
           <div class="description2">{{ detailCard.description2 }}</div>
-          <v-row class="div-inside">
+          <v-row class="div-inside" no-gutters>
             <v-select class="dropdown" :items="items"></v-select>
             <button class="button-style">Remove</button>
             <div class="price">{{ detailCard.price }}</div>
@@ -42,9 +42,18 @@ export default {
 </script>
 
 <style scoped>
-.product-image {
-  width: 144px;
-  margin: 24px;
+.cart-card {
+  width: 906px;
+  height: 192px;
+  margin-bottom: 32px;
+  background-color: var(--v-charcoal100-base);
+  border: 0px;
+}
+.v-sheet.v-card {
+    border-radius: 0px;
+}
+.v-sheet.v-card:not(.v-sheet--outlined) {
+    box-shadow: 0px 0px;
 }
 .row {
   margin: 0px;
@@ -55,6 +64,10 @@ export default {
 .col-separation {
   width: 256px;
   margin-right: -520px;
+}
+.product-image {
+  width: 144px;
+  margin: 24px;
 }
 .div-inside {
   margin: 0px;
@@ -105,7 +118,6 @@ export default {
   font-size: 18px;
   line-height: 26px;
   text-align: right;
-  margin-right: 24px;
   align-self: center;
 }
 </style>

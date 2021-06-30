@@ -11,7 +11,6 @@
           :items3="items3"
           :items4="items4"
         />
-        <CartCard :detailCard="cart" />
       </v-col>
     </v-row>
   </div>
@@ -20,19 +19,11 @@
 <script>
 import ProductListGrid from "@/components/ProductListGrid";
 import Filters from "@/components/Filters.vue";
-import CartCard from "@/components/CartCard.vue";
 
 export default {
   name: "Home",
   data() {
     return {
-      cart: {
-        img: "https://co.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw9a5c1d67/JBL-LINK-20-Back-BLK_1605x1605px.png?sw=537&sfrm=png",
-        title: "JBL Link 20",
-        description1: "Voice-activated portable speaker",
-        description2: "Hands-free voice control",
-        price: "$159.00",
-      },
       items: [
         {
           id: 1,
@@ -248,7 +239,6 @@ export default {
   components: {
     ProductListGrid,
     Filters,
-    CartCard,
   },
 };
 </script>

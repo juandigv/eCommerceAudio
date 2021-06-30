@@ -1,9 +1,8 @@
 <template>
-
   <div class="header">
     <img alt="" class="healthy-logo-2-1" src="../assets/HealthyLogo.png" />
     <div class="buttons">
-      <v-btn class="button-header" rounded>
+      <v-btn class="button-header" rounded :to="'/Products'">
         <div class="button">
           <p class="btn-label">Sales</p>
         </div>
@@ -15,13 +14,13 @@
         </div>
         <img alt="" class="vector" src="../assets/support.svg" />
       </v-btn>
-      <v-btn class="button-header" rounded>
+      <v-btn class="button-header" rounded :to="'/'">
         <div class="button">
           <p class="btn-label">Home</p>
         </div>
         <img alt="" class="vector" src="../assets/home.svg" />
       </v-btn>
-      <v-btn class="button-header" rounded>
+      <v-btn class="button-header" rounded :to="'/Checkout'">
         <div class="button">
           <p class="btn-label">Cart</p>
         </div>
@@ -137,7 +136,7 @@ export default {
 }
 .search-button {
   margin-top: 8px;
-  background: var(--v-charcoal50-base);;
+  background: var(--v-charcoal50-base);
   border: none;
   cursor: pointer;
   min-height: 42px;

@@ -3,36 +3,36 @@
   <div class="header">
     <img alt="" class="healthy-logo-2-1" src="../assets/HealthyLogo.png" />
     <div class="buttons">
-      <div class="button-header">
+      <v-btn class="button-header" rounded>
         <div class="button">
           <p class="btn-label">Sales</p>
         </div>
         <img alt="" class="vector" src="../assets/sales.svg" />
-      </div>
-      <div class="button-header">
+      </v-btn>
+      <v-btn class="button-header" rounded>
         <div class="button">
           <p class="btn-label">Support</p>
         </div>
         <img alt="" class="vector" src="../assets/support.svg" />
-      </div>
-      <div class="button-header">
+      </v-btn>
+      <v-btn class="button-header" rounded>
         <div class="button">
           <p class="btn-label">Home</p>
         </div>
         <img alt="" class="vector" src="../assets/home.svg" />
-      </div>
-      <div class="button-header">
+      </v-btn>
+      <v-btn class="button-header" rounded>
         <div class="button">
           <p class="btn-label">Cart</p>
         </div>
         <img alt="" class="vector" src="../assets/cart.svg" />
-      </div>
-      <div class="button-header">
+      </v-btn>
+      <v-btn class="button-header" rounded>
         <div class="button">
           <p class="btn-label">Profile</p>
         </div>
         <img alt="" class="vector" src="../assets/profile.svg" />
-      </div>
+      </v-btn>
     </div>
     <div class="search-container">
       <input type="text" class="searchbar" placeholder="Search.." />
@@ -78,6 +78,8 @@ export default {
 }
 
 .button-header {
+  width: 120px;
+  height: 32px !important;
   margin-right: 16px;
   position: relative;
 }
@@ -92,7 +94,7 @@ export default {
   background-color: var(--v-charcoal50-base);
   width: 120px;
   min-width: 30px;
-  height: 40px;
+  height: 32px;
 }
 .btn-label {
   margin: 0px;
@@ -103,6 +105,7 @@ export default {
   align-items: center;
   text-align: center;
   justify-content: center;
+  font-weight: 600;
 }
 .vector {
   width: 20%;

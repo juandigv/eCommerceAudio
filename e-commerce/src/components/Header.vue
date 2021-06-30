@@ -1,4 +1,5 @@
 <template>
+
   <div class="header">
     <img alt="" class="healthy-logo-2-1" src="../assets/HealthyLogo.png" />
     <div class="buttons">
@@ -33,7 +34,12 @@
         <img alt="" class="vector" src="../assets/profile.svg" />
       </div>
     </div>
-    <img alt="" class="group-6" src="../assets/searchbar.png" />
+    <div class="search-container">
+      <input type="text" class="searchbar" placeholder="Search.." />
+      <v-btn icon color="var(--v-primary500-base)" class="search-button">
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+    </div>
   </div>
 </template>
 
@@ -56,7 +62,7 @@ export default {
   padding: 16px 32px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .healthy-logo-2-1 {
   width: 144px;
@@ -67,8 +73,8 @@ export default {
 }
 .buttons {
   display: flex;
-  position: absolute;
   left: 220px;
+  margin-right: 64px;
 }
 
 .button-header {
@@ -106,8 +112,30 @@ export default {
   flex: 1;
   top: 4px;
 }
-.group-6 {
-  width: 296px;
-  height: 48px;
+.search-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.searchbar {
+  padding: 8px;
+  padding-left: 14px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  background-color: var(--v-charcoal50-base);
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  max-width: 280px;
+}
+.search-button {
+  margin-top: 8px;
+  background: var(--v-charcoal50-base);;
+  border: none;
+  cursor: pointer;
+  min-height: 42px;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
 }
 </style>

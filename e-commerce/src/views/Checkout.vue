@@ -1,11 +1,30 @@
 <template>
   <div class="main-content">
-    <ProductListCheckout :items="products" />
+    <v-row justify="space-between" no-gutters>
+      <v-col>
+        <div style="margin-left: 32px">
+          <v-row justify="space-between" no-gutters>
+            <h1 class="text-sub">Cart items</h1>
+            <div class="placeHolderItems" />
+          </v-row>
+          <v-row justify="space-between" no-gutters> </v-row>
+          <h1 class="text-sub">You might want to add ...</h1>
+          <ProductListCheckout :items="products" />
+        </div>
+      </v-col>
+      <v-col>
+        <h1>Cart Total</h1>
+      </v-col>
+    </v-row>
+    <div style="margin-top:76px; margin-bottom:64px">
+      <Banner />
+    </div>
   </div>
 </template>
 
 <script>
 import ProductListCheckout from "../components/ProductListCheckout";
+import Banner from "../components/Banner.vue";
 
 export default {
   name: "Checkout",
@@ -30,7 +49,7 @@ export default {
           infoColor: "3",
           info: "",
         },
-         {
+        {
           id: 3,
           src: "https://switch.com.my/wp-content/uploads/2020/05/Soundlink-Micro-Orange-1.png",
           name: "SoundLink Micro Bluetooth® speaker",
@@ -44,6 +63,7 @@ export default {
   },
   components: {
     ProductListCheckout,
+    Banner,
   },
 };
 </script>
@@ -53,5 +73,18 @@ export default {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
+}
+.bg-color {
+  background-color: red;
+}
+.text-sub {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 24px !important;
+  line-height: 32px;
+  font-weight: 600;
+}
+.placeHolderItems {
+  height: 640px;
 }
 </style>

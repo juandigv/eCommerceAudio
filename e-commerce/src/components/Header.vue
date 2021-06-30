@@ -48,7 +48,11 @@ export default {
   box-sizing: border-box;
 }
 .header {
-  background: linear-gradient(#5865f2, #5865f2), #fcfcfc;
+  background: linear-gradient(
+      var(--v-primary500-base),
+      var(--v-primary500-base)
+    ),
+    var(--v-charcoal50-base);
   padding: 16px 32px;
   display: flex;
   align-items: center;
@@ -72,14 +76,14 @@ export default {
   position: relative;
 }
 .button {
-  background-color: #fcfcfc;
+  background-color: var(--v-charcoal50-base);
   border-radius: 32px;
   padding-left: 22px;
   padding-right: 1px;
   padding-top: 2px;
   padding-bottom: 2px;
   position: relative;
-  background-color: #fcfcfc;
+  background-color: var(--v-charcoal50-base);
   width: 120px;
   min-width: 30px;
   height: 40px;
@@ -88,7 +92,7 @@ export default {
   margin: 0px;
   height: 100%;
   width: 100%;
-  color: #5865f2;
+  color: var(--v-primary500-base);
   display: flex;
   align-items: center;
   text-align: center;

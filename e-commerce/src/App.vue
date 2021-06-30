@@ -6,8 +6,8 @@
     </v-main>
     <v-btn
       color="var(--v-primary500-base)"
-      width="96px"
-      height="96px"
+      width="72px"
+      height="72px"
       fixed
       fab
       right

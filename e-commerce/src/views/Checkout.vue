@@ -3,17 +3,18 @@
     <v-row justify="space-between" no-gutters>
       <v-col>
         <div style="margin-left: 32px">
-          <v-row justify="space-between" no-gutters>
-            <h1 class="text-cart">Cart items</h1>
-            <CartCard v-for="element in cart" :key="element.title" :detailCard="element" />
-          </v-row>
-          <v-row justify="space-between" no-gutters> </v-row>
+          <h1 class="text-sub">Cart items</h1>
+          <CartCard
+            v-for="element in cart"
+            :key="element.title"
+            :detailCard="element"
+          />
           <h1 class="text-sub">You might want to add ...</h1>
           <ProductListCheckout :items="products" />
         </div>
       </v-col>
       <v-col>
-        <SideTotal :detailSale="detailSale" class="info-cart"/>
+        <SideTotal :detailSale="detailSale" class="info-cart" />
       </v-col>
     </v-row>
     <div style="margin-top: 76px; margin-bottom: 64px">
@@ -26,16 +27,20 @@
 import CartCard from "@/components/CartCard.vue";
 import ProductListCheckout from "../components/ProductListCheckout";
 import Banner from "../components/Banner.vue";
-import SideTotal from  "../components/SideTotal.vue"
+import SideTotal from "../components/SideTotal.vue";
 
 export default {
   name: "Checkout",
   data() {
     return {
       detailSale: {
-        listSale : [ {item: "Pollo", price: "18.90$"}, {item: "Vaca", price: "90.99$"}, {item: "Pez", price: "5.69$"}],
-        coupons: [ "AdMw", "CpEs", "8S5A1", "ADMW"],
-        total: "22.549,68$"
+        listSale: [
+          { item: "JBL Link 20", price: "$99.00" },
+          { item: "Bose Sport Earbuds", price: "$159.00" },
+          { item: "Beats Solo3 Wireless Headphones", price: "$199.95" },
+        ],
+        coupons: ["AdMw", "CpEs", "8S5A1", "ADMW"],
+        total: "22.549,68$",
       },
       cart: [
         {
@@ -58,11 +63,11 @@ export default {
           description1: "The Beats Icon Collection",
           description2: "Matte Black",
           price: "$199.95",
-        }
+        },
       ],
       detailBanner: {
         detail:
-          "A message to Projessional customes: An important loudspeaker recall notice",
+          "A message to Professional customers: An important loudspeaker recall notice",
       },
       products: [
         {
@@ -110,24 +115,16 @@ export default {
   width: 100%;
   margin: 0 auto;
 }
-.bg-color {
-  background-color: red;
-}
-.text-cart {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
 .info-cart {
-  margin-top: 85px;
+  margin-top: 112px;
+  margin-left: 24px;
+  margin-right: 32px;
 }
 .text-sub {
-  margin-top: 8px;
+  margin-top: 40px;
   margin-bottom: 40px;
   font-size: 24px !important;
   line-height: 32px;
   font-weight: 600;
-}
-.placeHolderItems {
-  height: 640px;
 }
 </style>

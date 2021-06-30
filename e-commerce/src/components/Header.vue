@@ -82,6 +82,7 @@ export default {
   height: 32px !important;
   margin-right: 16px;
   position: relative;
+  text-transform: none;
 }
 .button {
   background-color: var(--v-charcoal50-base);
@@ -106,12 +107,14 @@ export default {
   text-align: center;
   justify-content: center;
   font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
 }
 .vector {
   width: 20%;
   height: 75%;
   position: absolute;
-  left: 16px;
+  left: 14px;
   flex: 1;
   top: 4px;
 }

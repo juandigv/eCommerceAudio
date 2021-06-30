@@ -1,41 +1,40 @@
 <template>
   <div class="main-content">
-    <v-row justify="space-around" no-gutters>
-      <v-col style="max-width:min-content;max-height:min-content;display:flex;">
-        <ProductCardCheckout
-        :item="extra[0]"
-      /></v-col>
-       <v-col style="max-width:min-content;max-height:min-content;display:flex;">
-        <ProductCardCheckout
-        :item="extra[1]"
-      /></v-col>
-    </v-row>
-    
+    <ProductListCheckout :items="products" />
   </div>
 </template>
 
 <script>
-import ProductCardCheckout from "../components/ProductCardCheckout";
+import ProductListCheckout from "../components/ProductListCheckout";
 
 export default {
-  name: "Home",
+  name: "Checkout",
   data() {
     return {
-      extra: [
+      products: [
         {
           id: 1,
-          src: "https://pontreyes.com/1243-large_default/auriculares-sennheiser-hd600.jpg",
-          name: "Sennheiser HD600",
-          detail: "Requires external DAC",
-          price: "379.99",
+          src: "https://media.zenfs.com/en/mybest_news_781/20b220612c3e35b0ad088056d14a8181",
+          name: "Beats Flex - All-Day Wireless Earphones",
+          detail: "-",
+          price: "49.99",
           infoColor: "3",
-          info: "Low Stock",
+          info: "",
+        },
+        {
+          id: 2,
+          src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgalaxystore.com.ua%2Fimages%2F16%2F80711217998559_small6.png&f=1&nofb=1",
+          name: "JBL Tune 120TWS",
+          detail: "-",
+          price: "89.95",
+          infoColor: "3",
+          info: "",
         },
          {
-          id: 2,
+          id: 3,
           src: "https://switch.com.my/wp-content/uploads/2020/05/Soundlink-Micro-Orange-1.png",
           name: "SoundLink Micro Bluetooth® speaker",
-          detail: "Requires external DAC",
+          detail: "-",
           price: "99.00",
           infoColor: "2",
           info: "Special offer",
@@ -44,7 +43,7 @@ export default {
     };
   },
   components: {
-    ProductCardCheckout,
+    ProductListCheckout,
   },
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="banner">
-    <div class="banner-text">
-      <p>
+    <div>
+      <p class="banner-text">
         {{ detailBanner.detail }}
       </p>
       <button class="button-style">Learn More</button>
@@ -25,26 +25,27 @@ export default {
     var(--v-charcoal200-base),
     var(--v-charcoal200-base)
   );
-  padding: 70px;
+  width: 1280px;
+  height: 144px;
   position: relative;
   text-align: center;
-  font-weight: bold;
-  font-size: 18px;
   font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  padding: 24px;
 }
 .banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: var(--v-charcoal900-base);
+  margin-bottom: 24px;
 }
 .button-style {
   background-color: var(--v-charcoal100-base);
-  border: 1px solid var(--v-primary500-base);
   color: var(--v-primary500-base);
   border-radius: 32px;
-  width: 180px;
-  height: 30px;
+  width: 216px;
+  height: 40px;
+  font-size: 24px;
+  line-height: 32px;
 }
 </style>

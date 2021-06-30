@@ -1,10 +1,12 @@
 <template>
   <div class="main-content">
-    <Banner2 :detailBanner2="detailBanner2" />
-    <ProductListSimple :items="items" />
     <Banner2 :detailBanner2="detailBanner21" />
+    <ProductListSimple :items="items" />
+    <Banner2 :detailBanner2="detailBanner31" />
     <ProductListSimple :items="items1" />
-    <Banner :detailBanner="detailBanner" />
+    <div style="margin-top: 80px; margin-bottom: 32px">
+      <Banner :detailBanner="detailBanner" />
+    </div>
   </div>
 </template>
 
@@ -31,6 +33,11 @@ export default {
         src: "https://i.imgur.com/ZU3KpSL.png",
         detail: "Eliminate distractions and #RuletheQuiet",
         subdetail: "RAZOR QUIETCOMFORT® EARBUDS",
+      },
+      detailBanner31: {
+        src: "https://images.jumpseller.com/store/quintec-distribucion/category/466073/940-hoofdtelefoon-sennheiser-banner.jpg.jpg?1618415153",
+        detail: "True believers in the power of sound",
+        subdetail: "SENNHEISER HD400S",
       },
       items: [
         {

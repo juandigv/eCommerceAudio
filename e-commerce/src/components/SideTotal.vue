@@ -1,14 +1,12 @@
 <template>
   <v-container>
     <v-col>
-      <v-row 
-      v-for="element in detailSale.listSale"
-        :key="element">
+      <v-row v-for="element in detailSale.listSale" :key="element.item">
         <v-col>
           <h3>{{ element.item }}</h3>
         </v-col>
         <v-col>
-          <h3 class="right-text">{{ element.price }} </h3>
+          <h3 class="right-text">{{ element.price }}</h3>
         </v-col>
       </v-row>
       <hr class="line my-6" />
@@ -21,10 +19,12 @@
         </v-col>
       </v-row>
       <button class="button-style my-8">Checkout</button>
-      <v-select :items="detailSale.coupons"
-          label="Coupon Codes"
-          dense
-          outlined></v-select>
+      <v-select
+        :items="detailSale.coupons"
+        label="Coupon Codes"
+        dense
+        outlined
+      ></v-select>
     </v-col>
   </v-container>
 </template>
@@ -39,11 +39,11 @@ export default {
 </script>
 
 <style scoped>
-.line{
-border-bottom: 1px solid var(--v-charcoal900-base);
+.line {
+  border-bottom: 1px solid var(--v-charcoal900-base);
 }
 .right-text {
-    text-align: right;
+  text-align: right;
 }
 .button-style {
   background-color: var(--v-primary500-base);

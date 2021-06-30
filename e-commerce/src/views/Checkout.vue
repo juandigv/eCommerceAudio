@@ -5,7 +5,11 @@
         <div style="margin-left: 32px">
           <v-row justify="space-between" no-gutters>
             <h1 class="text-cart">Cart items</h1>
-            <CartCard v-for="element in cart" :key="element.title" :detailCard="element" />
+            <CartCard
+              v-for="element in cart"
+              :key="element.title"
+              :detailCard="element"
+            />
           </v-row>
           <v-row justify="space-between" no-gutters> </v-row>
           <h1 class="text-sub">You might want to add ...</h1>
@@ -13,7 +17,7 @@
         </div>
       </v-col>
       <v-col>
-        <SideTotal :detailSale="detailSale" class="info-cart"/>
+        <SideTotal :detailSale="detailSale" class="info-cart" />
       </v-col>
     </v-row>
     <div style="margin-top: 76px; margin-bottom: 64px">
@@ -26,16 +30,20 @@
 import CartCard from "@/components/CartCard.vue";
 import ProductListCheckout from "../components/ProductListCheckout";
 import Banner from "../components/Banner.vue";
-import SideTotal from  "../components/SideTotal.vue"
+import SideTotal from "../components/SideTotal.vue";
 
 export default {
   name: "Checkout",
   data() {
     return {
       detailSale: {
-        listSale : [ {item: "Pollo", price: "18.90$"}, {item: "Vaca", price: "90.99$"}, {item: "Pez", price: "5.69$"}],
-        coupons: [ "AdMw", "CpEs", "8S5A1", "ADMW"],
-        total: "22.549,68$"
+        listSale: [
+          { item: "Pollo", price: "18.90$" },
+          { item: "Vaca", price: "90.99$" },
+          { item: "Pez", price: "5.69$" },
+        ],
+        coupons: ["AdMw", "CpEs", "8S5A1", "ADMW"],
+        total: "22.549,68$",
       },
       cart: [
         {
@@ -58,7 +66,7 @@ export default {
           description1: "The Beats Icon Collection",
           description2: "Matte Black",
           price: "$199.95",
-        }
+        },
       ],
       detailBanner: {
         detail:
@@ -118,7 +126,9 @@ export default {
   margin-bottom: 40px;
 }
 .info-cart {
-  margin-top: 85px;
+  margin-top: 120px;
+  padding: 0px;
+  padding-left: 12px;
 }
 .text-sub {
   margin-top: 8px;

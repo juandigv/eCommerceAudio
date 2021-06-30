@@ -2,8 +2,7 @@
   <div class="banner">
     <div class="banner-text">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-        pellentesque ante non nisl dignissim,
+        {{ detailBanner.detail }}
       </p>
       <button class="button-style">Learn More</button>
     </div>
@@ -13,6 +12,9 @@
 <script>
 export default {
   name: "Banner",
+  props: {
+    detailBanner: Object,
+  },
 };
 </script>
 <style scoped>

@@ -25,11 +25,9 @@
     width: 400px;
     height: 48px;
     border-radius: 16px;
-    border-color: var(--v-primary500-base) !important;
-    border-width: 3px !important;
     box-shadow: 0px 12px 8px 0px var(--v-charcoal400-base) !important;
 }
-.text-field >>> fieldset {
+.text-field ::v-deep fieldset {
     border-color: var(--v-primary500-base) !important;
 }
 .product-button{

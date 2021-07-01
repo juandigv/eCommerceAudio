@@ -17,7 +17,7 @@
         <h3 class="right-text semibold">{{ detailSale.total }}</h3>
       </v-col>
     </v-row>
-    <button class="button-style semibold">CHECKOUT</button>
+    <v-btn class="button-style semibold">CHECKOUT</v-btn>
     <v-select
       :items="detailSale.coupons"
       label="Coupon Codes"

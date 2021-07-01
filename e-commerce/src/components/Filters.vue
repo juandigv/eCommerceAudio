@@ -34,7 +34,7 @@
         ></v-radio>
       </v-radio-group>
 
-      <button class="button-style">CLEAR</button>
+      <v-btn class="button-style">CLEAR</v-btn>
     </v-col>
   </v-container>
 </template>

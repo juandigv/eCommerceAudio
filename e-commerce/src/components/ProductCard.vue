@@ -18,9 +18,9 @@
         <div class="product-info-text">{{ info }}</div>
       </v-card>
     </div>
-      <span class="product-name-text">{{ name }}</span>
-      <span class="product-detail-text">{{ detail }}</span>
-      <span class="product-price-text">Price: ${{ price }}</span>
+    <span class="product-name-text">{{ name }}</span>
+    <span class="product-detail-text">{{ detail }}</span>
+    <span class="product-price-text">Price: ${{ price }}</span>
   </v-card>
 </template>
 

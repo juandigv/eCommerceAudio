@@ -52,6 +52,11 @@ export default {
 * {
   box-sizing: border-box;
 }
+*:focus,
+*:hover {
+  outline: none;
+}
+
 .header {
   background: linear-gradient(
       var(--v-primary500-base),
@@ -120,7 +125,6 @@ export default {
 .search-container {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   margin-bottom: 10px;
 }
 .searchbar {
@@ -133,6 +137,7 @@ export default {
   border-top-left-radius: 9999px;
   border-bottom-left-radius: 9999px;
   max-width: 280px;
+  height: 42px;
 }
 .search-button {
   margin-top: 8px;
@@ -142,5 +147,6 @@ export default {
   min-height: 42px;
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
+  min-height: 42px;
 }
 </style>

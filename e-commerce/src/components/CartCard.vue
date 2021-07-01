@@ -50,10 +50,10 @@ export default {
   border: 0px;
 }
 .v-sheet.v-card {
-    border-radius: 0px;
+  border-radius: 0px;
 }
 .v-sheet.v-card:not(.v-sheet--outlined) {
-    box-shadow: 0px 0px;
+  box-shadow: 0px 0px;
 }
 .row {
   margin: 0px;

@@ -1,6 +1,6 @@
 <template>
   <v-container class="side-total">
-    <v-row v-for="element in detailSale.listSale" :key="element">
+    <v-row v-for="element in detailSale.listSale" :key="element.item">
       <v-col>
         <h3 class="semibold">{{ element.item }}</h3>
       </v-col>

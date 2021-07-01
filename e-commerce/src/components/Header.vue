@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <img alt="" class="healthy-logo-2-1" src="../assets/HealthyLogo.png" />
+    <img alt="" class="healthy-logo-2-1" src="../assets/HealthyLogoV2.png" />
     <div class="buttons">
       <v-btn class="button-header" rounded :to="'/Products'">
         <div class="button">

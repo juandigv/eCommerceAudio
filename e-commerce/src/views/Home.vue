@@ -82,7 +82,7 @@ export default {
           detail: "Price depends on color",
           price: "17.99",
           infoColor: "4",
-          info: "Coupons Available",
+          info: "PreOrder Available",
         },
       ],
       items1: [

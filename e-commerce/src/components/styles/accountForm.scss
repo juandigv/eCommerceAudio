@@ -1,0 +1,45 @@
+@import "@/sass/variables.scss";
+
+.heading{
+    color: var(--v-charcoal900-base);
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: $font-weight-semibold;
+    height: 80px;
+}
+.subheading{
+    color: var(--v-charcoal900-base);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: $font-weight-semibold;
+    margin-top: 48px;
+}
+.filter-checkbox {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    height: 52px;
+    width: 400px; 
+}
+.text-field{
+    width: 400px;
+    height: 48px;
+    border-radius: 16px;
+    border-color: var(--v-primary500-base) !important;
+    border-width: 3px !important;
+    box-shadow: 0px 12px 8px 0px var(--v-charcoal400-base) !important;
+}
+.text-field >>> fieldset {
+    border-color: var(--v-primary500-base) !important;
+}
+.product-button{
+    color: var(--v-charcoal50-base) !important; 
+    width: 136px !important;
+    height: 48px !important;
+    margin-left: 128px;
+    margin-top: 24px;
+    font-size: 24px !important;
+    line-height: 32px;
+    font-weight: $font-weight-semibold;
+    text-transform: none;
+}

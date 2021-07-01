@@ -56,46 +56,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-@import "../sass/variables.scss";
-
-.col {
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.titles {
-  margin-top: 40px;
-  margin-bottom: 16px;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 600;
-}
-
-.filter-checkbox {
-  margin-top: 0px;
-  padding-top: 0px;
-  margin-bottom: 16px;
-  height: 24px;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
-}
-
-.v-input--radio-group--column .v-radio:not(:last-child):not(:only-child) {
-  margin-bottom: 16px;
-}
-
-.button-style {
-  background-color: var(--v-primary500-base);
-  color: var(--v-charcoal50-base);
-  border-radius: 32px;
-  width: 154px;
-  height: 48px;
-  font-size: 24px;
-  line-height: 32px;
-  margin-top: 16px;
-}
-</style>
+<style lang="scss" src="./styles/filters.scss" scoped></style>

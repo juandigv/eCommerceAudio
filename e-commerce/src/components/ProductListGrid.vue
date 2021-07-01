@@ -70,4 +70,5 @@ export default {
   },
 };
 </script>
-<style src="./productListGrid.css" scoped></style>
+
+<style lang="scss" src="./styles/productListGrid.scss" scoped></style>

@@ -36,29 +36,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.side-total {
-  max-width: 286px;
-  padding: 0px;
-}
-.line {
-  border-bottom: 1px solid var(--v-charcoal900-base);
-}
-.right-text {
-  text-align: right;
-}
-.semibold {
-  font-weight: 600;
-}
-.button-style {
-  background-color: var(--v-primary500-base);
-  color: var(--v-charcoal50-base);
-  border-radius: 32px;
-  width: 286px;
-  height: 48px;
-  font-size: 24px;
-  line-height: 32px;
-  margin-top: 32px;
-  margin-bottom: 64px;
-}
-</style>
+<style lang="scss" src="./styles/sideTotal.scss" scoped></style>

@@ -1,3 +1,5 @@
+@import "@/sass/variables.scss";
+
 .product-card {
     box-shadow: 0px 4px 16px -4px var(--v-charcoal400-base) !important;
 }
@@ -22,13 +24,13 @@
     color: var(--v-charcoal50-base);
     font-size: 12px;
     line-height: 18px;
-    font-weight: 400;
+    font-weight: $font-weight-regular;
 }
 .product-name-text {
     color: var(--v-charcoal900-base);
     font-size: 18px;
     line-height: 26px;
-    font-weight: 600;
+    font-weight: $font-weight-semibold;
     height: 52px;
     margin-left: 32px;
     margin-right: 32px;
@@ -44,7 +46,7 @@
     color: var(--v-charcoal900-base);
     font-size: 12px;
     line-height: 18px;
-    font-weight: 400;
+    font-weight: $font-weight-regular;
     height: 18px;
     margin-left: 32px;
     margin-right: 32px;
@@ -65,5 +67,5 @@
     margin-right: 80px;
     font-size: 24px !important;
     line-height: 32px;
-    font-weight: 600;
+    font-weight: $font-weight-semibold;
 }

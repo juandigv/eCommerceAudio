@@ -21,11 +21,10 @@ export default {
     return {
       detailBanner: {
         detail:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque ante non nisl dignissim, RRREEEEELOCO",
+          "A message to Professional customers: An important loudspeaker recall notice",
       },
       detailBanner2: {
         src: "https://i.pinimg.com/originals/26/cc/10/26cc10bba7cc18f1e254e2d6077d23e9.jpg",
-        //src: "https://i.imgur.com/ZU3KpSL.png",
         detail: "Eliminate distractions and #RuletheQuiet",
         subdetail: "RAZOR QUIETCOMFORT® EARBUDS",
       },

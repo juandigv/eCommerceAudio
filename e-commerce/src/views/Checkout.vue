@@ -109,7 +109,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "@/sass/variables.scss";
+
 .main-content {
   max-width: 1280px;
   width: 100%;
@@ -118,13 +120,12 @@ export default {
 .info-cart {
   margin-top: 112px;
   margin-left: 24px;
-  margin-right: 32px;
 }
 .text-sub {
   margin-top: 40px;
   margin-bottom: 40px;
   font-size: 24px !important;
   line-height: 32px;
-  font-weight: 600;
+  font-weight: $font-weight-semibold;
 }
 </style>

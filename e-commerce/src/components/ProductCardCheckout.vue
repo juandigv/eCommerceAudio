@@ -59,4 +59,5 @@ export default {
   },
 };
 </script>
-<style src="./productCardCheckout.css" scoped></style>
+
+<style lang="scss" src="./styles/productCardCheckout.scss" scoped></style>

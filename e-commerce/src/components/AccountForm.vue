@@ -59,4 +59,4 @@ export default {
   },
 };
 </script>
-<style src="./accountForm.css" scoped></style>
+<style lang="scss" src="./styles/accountForm.scss" scoped></style>

@@ -12,6 +12,7 @@
           :items4="items4"
         />
       </v-col>
+      <BannerRegister :detailBanner="bannerReg" />
     </v-row>
   </div>
 </template>
@@ -19,11 +20,19 @@
 <script>
 import ProductListGrid from "@/components/ProductListGrid";
 import Filters from "@/components/Filters.vue";
+import BannerRegister from "@/components/BannerRegister.vue";
 
 export default {
   name: "Home",
   data() {
     return {
+      bannerReg: {
+        img: "https://d2rbodpj0xodc.cloudfront.net/stories/1441380214247523754/bad03d87-9aae-45ac-8362-648c3de21e77.jpeg",
+        detail: "Sign up",
+        detail2: "Exclusive offers",
+        detail3: "Exclusive product",
+        detail4: "Exclusive clients",
+      },
       items: [
         {
           id: 1,
@@ -239,6 +248,7 @@ export default {
   components: {
     ProductListGrid,
     Filters,
+    BannerRegister,
   },
 };
 </script>

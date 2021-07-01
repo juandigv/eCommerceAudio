@@ -28,4 +28,5 @@ export default {
   },
 };
 </script>
-<style src="./productListSimple.css" scoped></style>
+
+<style lang="scss" src="./styles/productListSimple.scss" scoped></style>

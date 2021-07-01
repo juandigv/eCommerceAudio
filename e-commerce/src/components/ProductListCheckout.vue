@@ -21,4 +21,5 @@ export default {
   },
 };
 </script>
-<style src="./productListCheckout.css" scoped></style>
+
+<style lang="scss" src="./styles/productListCheckout.scss" scoped></style>

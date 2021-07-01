@@ -1,0 +1,10 @@
+@import "@/sass/variables.scss";
+
+.product-list-checkout{
+    width: 906px;
+}
+.product-col{
+    max-width: min-content;
+    max-height: min-content;
+    display: flex;
+}

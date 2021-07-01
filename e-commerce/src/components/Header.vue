@@ -26,7 +26,7 @@
         </div>
         <img alt="" class="vector" src="../assets/cart.svg" />
       </v-btn>
-      <v-btn class="button-header" rounded>
+      <v-btn class="button-header" rounded :to="'/Account'">
         <div class="button">
           <p class="btn-label">Profile</p>
         </div>

@@ -1,0 +1,30 @@
+@import "@/sass/variables.scss";
+
+.banner {
+    background: linear-gradient(
+      var(--v-charcoal200-base),
+      var(--v-charcoal200-base)
+    );
+    width: 1280px;
+    height: 144px;
+    position: relative;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: $font-weight-semibold;
+    padding: 24px;
+}
+.banner-text {
+    color: var(--v-charcoal900-base);
+    margin-bottom: 24px;
+}
+.button-style {
+    background-color: var(--v-charcoal100-base);
+    color: var(--v-primary500-base);
+    border-radius: 32px;
+    width: 216px;
+    height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+}

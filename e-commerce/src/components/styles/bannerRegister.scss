@@ -1,0 +1,26 @@
+@import "@/sass/variables.scss";
+
+.banner {
+    height: 816px;
+    width: 592px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 80px;
+}
+.banner-text {
+    color: var(--v-charcoal50-base);
+}
+.detail-title {
+    color: var(--v-primary500-base);
+    font-weight: $font-weight-semibold;
+    font-size: 64px;
+    line-height: 74px;
+}
+.detail {
+    font-weight: $font-weight-semibold;
+    font-size: 48px;
+    line-height: 58px;
+    margin-top: 80px;
+}

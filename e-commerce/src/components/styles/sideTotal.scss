@@ -1,0 +1,27 @@
+@import "@/sass/variables.scss";
+
+.side-total {
+    max-width: 286px;
+    padding: 0px;
+}
+.line {
+    border-bottom: 1px solid var(--v-charcoal900-base);
+}
+.right-text {
+    text-align: right;
+}
+.semibold {
+    font-weight: 600;
+}
+.button-style {
+    background-color: var(--v-primary500-base) !important;
+    color: var(--v-charcoal50-base);
+    border-radius: 32px;
+    width: 286px;
+    height: 48px;
+    font-size: 24px;
+    font-weight: $font-weight-semibold;
+    line-height: 32px;
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
